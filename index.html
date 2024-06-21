@@ -31,32 +31,184 @@
       };
     </script>
   </head>
-  <body class="bg-blak">
-    <header class="header w-screen bg-slate-700 p-5 fixed flex justify-center">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <body class="">
+    <header class="header w-screen bg-slate-600 p-5 fixed flex justify-center">
       <h1 class="font-raleway text-xl font-semibold md:text-4xl text-white">
         <span class="font-lacquer">Mizuku</span> Survival Multiplayer
       </h1>
     </header>
     <div
-      class="flex flex-col md:flex-row bg-slate-900 h-screen justify-center items-center"
+      class="pt-10 md:mt-0 flex flex-col md:flex-row bg-slate-800 h-screen justify-center items-center"
+      id="home"
     >
       <img
-        src="mizuku_logo.jpg"
+        src="img/mizuku_logo.jpg"
         alt="Logo Mizuku"
         class="rounded-full md:h-80 h-60"
       />
       <div class="faq text-white md:px-20 py-10">
-        <h1 class="text-2xl font-raleway">FAQ (Fraquently Asked Question)</h1>
+        <h1 class="text-2xl font-raleway">
+          <span class="font-bold">FAQ</span> (Fraquently Asked Question)
+        </h1>
         <p class="mb-10">Sering Ditanyakan</p>
-        <ul class="">
-          <li></li>
-          <li>Test</li>
-          <li>Test</li>
+        <ul class="underline underline-offset-4 p-2">
+          <li class="mb-2">
+            <a href="#jual_beli_item">Cara Jual / Beli Di Shop</a>
+          </li>
+          <li class="mb-2"><a href="#land_claim">Cara Claim Land</a></li>
+          <li class="mb-2">
+            <a href="#tpa">Cara Tpa Ke Orang dan Penjelasan Tentang TPA</a>
+          </li>
+          <li class="mb-2"><a href="">Cara Transfer Money</a></li>
         </ul>
       </div>
     </div>
-    <main>
-      <h1>Cara Jual Beli Di Shop GUI</h1>
+    <main class="bg-slate-800 h-full">
+      <div
+        class="max-w-5xl rounded overflow-hidden shadow-lg bg-white mx-auto mb-12"
+        id="jual_beli_item"
+      >
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Cara Jual Beli Di Shop</div>
+          <p class="text-gray-700 text-base mb-4">
+            Untuk Buy dan Sell item di shop ada di bagian bawah UI, dibawah
+            terdapat Saklar yang jika saklarnya kekiri maka artinya item
+            tersebut akan dijual namun jika saklarnya kekanan itu artinya anda
+            akan membeli item tersebut. Contoh:
+          </p>
+          <img src="img/bisadijual.jpg" alt="Bisa Dijual" />
+          <p class="text-gray-700 text-base mt-4">
+            Dan juga ada beberapa item yang TIDAK bisa dijual. Contoh:
+          </p>
+          <img src="img/tidakbisadijual.jpg" alt="Tidak Bisa Dijual" />
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#shop</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#HowTo</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#CaraJualBelitem</span
+          >
+        </div>
+      </div>
+      <!--? batas card -->
+      <div
+        class="max-w-5xl rounded overflow-hidden shadow-lg bg-white mx-auto mb-12"
+        id="land_claim"
+      >
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Cara Claim Land</div>
+          <p class="text-gray-700 text-base mb-4">
+            Untuk Land Claim, tentukan startpos dan endpos dengan sneak+click
+            lalu buka UI gemboknya dan beri nama Area lalu klik submit dan
+            selesai... base anda akan bebas raid dan anda juga bisa melihat
+            garis landnya dengan sneak di bagian tengah land. Contoh:
+          </p>
+          <p class="text-red-500 font-bold text-base">* Tonton Sampai Habis</p>
+          <video class="w-100" controls>
+            <source src="/vids/caraclaimland.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="text-gray-700 text-base mt-4">
+            Ada Juga beberapa orang yang mengalami error seperti di video bawah
+            ini. Berikut masalahnya dan solusinya:
+          </p>
+          <video class="w-100" controls>
+            <source src="/vids/solvelandproblem.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#land</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#HowTo</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#CaraLandClaim</span
+          >
+        </div>
+      </div>
+      <!--? batas card -->
+      <div
+        class="max-w-5xl rounded overflow-hidden shadow-lg bg-white mx-auto mb-12"
+        id="tpa"
+      >
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">
+            Cara TPA dan penjelasan saklar nya
+          </div>
+          <p class="text-gray-700 text-base mb-4">
+            Untuk TPA terdapat saklar dimana saklar itu jika di hidupkan artinya
+            anda menteleportasi orang ke tempat anda, Namun jika dimatikan
+            artinya anda ingin teleportasi ke posisi orang itu. Contoh:
+          </p>
+          <img src="img/tpa.jpg" alt="Tpa" />
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#tp</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#HowTo</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#CaraTPA</span
+          >
+        </div>
+      </div>
+      <!--? batas card -->
+      <div
+        class="max-w-5xl rounded overflow-hidden shadow-lg bg-white mx-auto mb-20"
+      >
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Cara Transfer Money</div>
+          <p class="text-gray-700 text-base mb-4">
+            Untuk Transfer Money Sih.... hrusnya gampang, ke bank UI lalu klik
+            transfer. Contoh:
+          </p>
+          <img src="img/transferbank.jpg" alt="Transfer Money" />
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#money</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#HowTo</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#CaraTransferMoney</span
+          >
+        </div>
+      </div>
+      <div class="w-full h-20 bg-slate-800">
+        <h1 class="text-center text-white text-lg">
+          <a href="#home" class="underline underline-offset-4"
+            >&laquo; Kembali Ke Atas &raquo;</a
+          >
+        </h1>
+      </div>
     </main>
   </body>
 </html>
